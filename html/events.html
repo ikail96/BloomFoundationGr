@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Events</title>
+       
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <link rel="stylesheet" href="stylesAboutUs.css">
+        <link rel="stylesheet" href="animate-on-scroll.css">
+        <link rel="stylesheet" href="donate.css">
+        <link rel="stylesheet" href="gallery.css">
+        <link rel="stylesheet" href="calendar.css">
+       
+                    
+               
+        
+    </head>
+
+
+    <body>
+      <header>
+       
+        <nav class="navbar fixed-top navbar-expand-lg border-body nav-transparent" data-bs-theme="dark" style="z-index: 2; min-height: 58.59px;" id="myNav">
+       
+            <div class="container-fluid">
+               <a class="navbar-brand fs-5" href="index.html" ><img src="images/logo.png" alt="logo" width=50px>Bloom Foundation</a>
+                  
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 ms-auto mt-2 pt-2">
+                        <li class="nav-item active"><a href="index.html" class="nav-link fs-5">Home</a></li>
+                        <li class="nav-item"><a href="aboutus.html" class="nav-link fs-5">About</a></li>
+                        
+                        <li class="nav-item"><a href="donate.html" class="nav-link fs-5">Donate</a></li>
+                        
+                        <li class="nav-item"><a href="gallery.html" class="nav-link fs-5">Gallery</a></li>
+                        <li class="nav-item"><a href="events.html" class="nav-link fs-5">Events</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link fs-5">Contact</a></li>
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="dropdown-item text-light" href="#GT"  title="languages"><img src="images/language-empty.png" alt="languages" width="30" height="26">
+                            </a></button>
+
+                          <ul class="dropdown-menu" style="border:none">
+                             
+                              <li><a class="dropdown-item" href="#GT"  title="English">
+                                <img src="https://flagcdn.com/w20/gb.png" alt="English" width="24" height="16">
+                              </a></li>
+
+                              <li><a class="dropdown-item" href="#GT"  title="Ελληνικά"><img src="https://flagcdn.com/w20/gr.png" alt="Ελληνικά" width="24" height="16">
+                              </a></li>
+                            </div> 
+                        </ul>                    
+                       </ul>
+                  
+                    
+                  </div>
+                </div>
+              
+              </nav>
+              
+          </nav>
+          
+         
+    </header>
+<main>
+
+    <div id="hero6" class="bg-image d-flex justify-content-center align-items-center img-fluid" >
+        <div class="container-fluid">
+            <div class="row mb-5">
+                <div class="col-sm-12 text-center ps-5 mt-5">
+
+                       
+                            
+                                <h1 style="z-index:3; color:white;" class="animate-on-scroll">Events</h1>
+             
+                           
+                     
+                      
+                      
+    
+                    
+                </div>       
+            </div>           
+        </div>
+                        
+    </div>
+
+
+
+<div class="container">
+        <div
+          class="row d-flex justify-content-center align-items-center g-2 mt-5"
+        >
+         <div class="col-md-6">
+        
+        <div class="calendar-container" id="calenCont">
+          <div class="calendar">
+            <div class="header">
+              <button class="left"><i class="fa-solid fa-chevron-left"></i></i></button>
+              <div class="display"></div>
+              <button class="right"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div class="days"></div>
+          </div>
+        </div>
+    
+       
+        <div class="event-panel" id="eventPanel">
+          <div class="event-header">
+            <h2 id="eventTitle">Event Title</h2>
+            <span class="close-btn" id="closePanel">&times;</span>
+          </div>
+          <div class="event-body" id="eventBody">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5" id="cardFoodDonation">
+      <div class="col-xs-12">
+
+        <div class="card" >
+            <div class="card-header mt-4 mb-4 border" style="background-color:var(--orange-color-logo); color:white">
+              Food Donation
+            </div>
+            <div class="card-body">
+              
+              <p class="card-text">
+                <p>Hunger is a reality for many families in our community. At “Together We Feed”, we believe no one should face an empty plate. This event invites neighbors, friends, and local businesses to unite in a heartfelt effort to support those most in need.
+          
+                  For one special day, we’re collecting food donations that will be distributed to families and individuals experiencing food insecurity. Your contribution, whether big or small, can help make sure every table is filled.<br><br>
+                  
+                  What You Can Bring:<br>
+                  Canned goods (vegetables, beans, soups, tuna, etc.)<br>
+                  
+                  Dry items (rice, pasta, cereals, flour, sugar)<br>
+                  
+                  Baby food & formula for families with young children<br>
+                  
+                  Fresh produce (fruits & vegetables from local gardens and farmers welcome!) <br><br>
+                  
+                  📍 Location<br>
+                  Mall Venue – Main Street 56, Downtown<br><br>
+                  
+                  📅 Date & Time<br>
+                  July 20, 2025 | 09:00  – 19:00<br><br><br>
+                  
+                  Our team of volunteers will be on site to help sort and package donations for immediate delivery to local food banks and shelters.
+                  
+                  ✨ Together, we can make a lasting impact and bring hope to our neighbors in need.</p>
+              </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="row mt-5 mb-5" id="cardToysDonation">
+          <div class="col-xs-12">
+
+          <div class="card">
+            <div class="card-header mt-4 border" style="background-color:var(--orange-color-logo); color:white">
+              Donation for Toys and Clothing
+            </div>
+            <div class="card-body">
+              
+              <p class="card-text">
+                <p>There’s nothing more heartwarming than knowing you’ve made a child smile or kept a family warm during difficult times. The “Share the Warmth” donation drive invites our community to come together and share love, kindness, and comfort with those in need.
+          
+                  This special event is dedicated to collecting new and gently used toys, clothes, and essential items to support underprivileged children and families. Each contribution brings joy to someone’s life and helps restore dignity and hope.) <br><br>
+                  
+                  What to Donate:<br>
+                  Toys: puzzles, books, stuffed animals, board games, and sports equipment<br>
+
+                  Clothing: clean, gently used or new clothes for all ages (infants, children, adults)<br>
+
+                  Winter Essentials: coats, scarves, gloves, and blankets<br>
+
+                  Shoes: all sizes, especially for children and teens<br><br>
+                  📍 Location<br>
+                  Mall Venue – Main Street 56, Downtown<br><br>
+                  
+                  📅 Date & Time<br>
+                  August 15, 2025 | 09:00  – 19:00<br><br><br>
+                  
+                  Volunteers will be present to help sort, package, and distribute your donations to local shelters and children’s organizations.
+                  Every toy, every coat, and every small gesture helps bring happiness and warmth to those who need it most.</p>
+              </p>
+              
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <div class="row mt-5 mb-5" id="cardWaterDonation">
+          <div class="col-xs-12">
+
+            <div class="card">
+              <div class="card-header mt-4 border" style="background-color:var(--orange-color-logo); color:white">
+                Donation for Clean Water Campaign
+              </div>
+              <div class="card-body">
+                
+                <p class="card-text">
+                  <p>Access to clean, safe drinking water is a basic human right, yet millions around the world still struggle daily to find it. The “Clean Water for All” campaign calls on our community to stand together and make a lasting impact. By supporting this initiative, you help bring life-saving clean water solutions to families and communities in need.
+
+                    This donation drive focuses on raising funds and collecting supplies to support the installation of water purification systems, wells, and hygiene kits in areas where clean water is scarce.<br><br>
+                    How You Can Contribute:<br>
+                    Monetary Donations to fund water filtration systems and wells<br>
+
+                    Hygiene Supplies: soaps, disinfectants, water containers, and reusable bottles<br>
+
+                    Educational Materials: posters and booklets on hygiene and safe water practices<br>
+
+                    Volunteer Your Time: help us organize kits and raise awareness locally<br><br>
+
+
+                    
+                    📍 Location<br>
+                    Mall Venue – Main Street 56, Downtown<br><br>
+                    
+                    📅 Date & Time<br>
+                    Septempber 10, 2025 | 09:00  – 19:00<br><br><br>
+                    
+                    Our volunteers and partners will ensure every donation reaches the communities that need it most. Together, we can quench thirst, prevent disease, and bring hope to thousands.
+                     Your act of kindness ripples outwards—just like water itself.
+                </p>
+                
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="row mt-5 mb-5" id="cardFeesDonation">
+            <div class="col-xs-12">
+
+            <div class="card">
+              <div class="card-header mt-4 border" style="background-color:var(--orange-color-logo); color:white">
+                Donation for the School fees
+              </div>
+              <div class="card-body">
+                
+                <p class="card-text">
+                  <p>Education is the foundation of a brighter future, yet many children are denied this right simply because they cannot afford school fees. The “Education for Every Child” campaign invites you to make a difference in the lives of young students, helping them break free from the cycle of poverty through the gift of learning.
+
+                    This initiative is dedicated to raising funds for tuition fees, school supplies, and uniforms, ensuring that no child in our community is left behind. By participating, you are empowering children with the tools they need to dream, grow, and achieve.<br><br>
+                    How You Can Contribute:<br>
+                    
+                    Monetary Donations: to cover school fees and provide scholarships<br>
+
+                    School Supplies: notebooks, pens, backpacks, and stationery<br>
+
+                    Uniforms and Shoes: for children of all ages<br>
+
+                    Volunteer Mentorship: spend time tutoring or mentoring students in need<br><br>
+
+
+
+                    
+                    📍 Location<br>
+                    Mall Venue – Main Street 56, Downtown<br><br>
+                    
+                    📅 Date & Time<br>
+                    Septempber 01, 2025 | 09:00  – 19:00<br><br><br>
+                    
+                    Your support not only helps children access education but also inspires hope and resilience in families striving for a better future.
+
+                    “When we educate one child, we light up an entire generation.”</p>
+                
+                
+              </div>
+            </div>
+            </div>
+          </div>
+
+
+    
+    </div>
+
+
+     
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+
+    </main>
+    <footer class="text-center text-lg-start text-light">
+  
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+       
+        <div class="me-5 d-none d-lg-block">
+          <span style="color:var(--orange-color-logo);">Get connected with us on social networks:</span>
+        </div>
+       
+        <div>
+          <a href="https://www.facebook.com/" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://x.com/" class="me-4 text-reset">
+              <i class="fa-brands fa-x-twitter"></i>
+          </a>
+      
+          <a href="https://www.instagram.com/" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          
+        </div>
+        
+      </section>
+     
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          
+          <div class="row mt-3">
+          
+            <div class="col-md-6 col-lg-4 col-xl-3 mx-auto mb-4">
+             
+              
+              <p>
+                  
+               <img src="images/bloomfoundation.png" alt="bloomfoundation" style="width:300px">
+              </p>
+              <p>
+              <h2 class="text-center">"With love, we help </h2>
+                <h2 class="text-center">   children <span style=color:var(--orange-color-logo)>BLOOM</span>"</h2></p>
+            </div>
+  
+  
+  
+            <div class="col-md-6 col-lg-2 col-xl-2 mx-auto mb-2">
+  
+              <h6 class="text-uppercase fw-bold mb-2" style="color:var(--orange-color-logo);">
+                  about us
+                </h6>
+              
+                  
+                  <p>
+                  At Bloom Foundation, we believe that every child deserves the chance to grow, thrive, and bloom into their fullest potential. As a non-profit organization, our mission is to provide love, care, and support to children in need – helping them heal, flourish, and build brighter futures.
+  
+                  
+  
+  
+                </p>
+  
+              </div>
+    
+           
+           
+              <div class="col-md-6 col-lg-2 col-xl-2 mx-auto mb-4">
+           
+                  <h6 class="text-uppercase fw-bold mb-4" style="color:var(--orange-color-logo);">
+                    Site links
+                  </h6>
+                  <p>
+                    <a href="index.html" class="text-reset">Home</a>
+                  </p>
+                  <p>
+                    <a href="aboutus.html" class="text-reset">About</a>
+                  </p>
+                  <p>
+                    <a href="donate.html" class="text-reset">Donate</a>
+                  </p>
+                  <p>
+                    <a href="gallery.html" class="text-reset">Gallery</a>
+                  </p>
+                  <p>
+                      <a href="events.html" class="text-reset">Events</a>
+                    </p>
+                </div>
+               
+           
+            <div class="col-md-6 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+           
+              <h6 class="text-uppercase fw-bold mb-4" style="color:var(--orange-color-logo);">Contact</h6>
+              <p><i class="fas fa-home me-3"></i> Tadeodos 96, Chania</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                <a href="mailto:bloomfoundation@gmail.com">bloomfoundation@gmail.com</a> 
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+            </div>
+         
+          </div>
+        
+        </div>
+      </section>
+   
+    
+    
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2025 Copyright: Bloom Foundation <br>
+          // THIS SITE IS CREATED FOR EDUCATIONAL PURPOSE ONLY //
+           
+        
+      </div>
+   
+    </footer>            
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+    
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+      
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.5/dist/index.bundle.min.js"></script>
+        <script src="counterAnimate.js"></script>
+        <script src="scroll.js"></script>
+        <script src="cardsCarousel.js" defer></script>
+        <script src="bgColor.js"></script>
+        <script src="backToTop.js"></script>
+        <script src="calendar.js"></script>
+        
+       <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if($(window).scrollTop() > $(window).height()){
+                    $("#myNav").css({"background-color":"#021628"});
+                     
+                }
+                else{
+                    $("#myNav").css({"background-color":"transparent"});
+                }
+    
+                if($(window).width() < 600){
+                    $("#myNav").css({"background-color":"#021628"});   
+                } 
+        
+            })
+        })
+    
+    
+    
+    
+    </script>
+
+<div class="container-fluid" id="GT">
+  <div class="row  " style="background-color:var(--blue-color-logo)">
+ 
+           <div class="col-xs-12 col-sm-12 col-md-12 d-flex justify-content-center align-items-center mx-auto">
+      
+            
+            
+                  <div id="google_translate_element" style="height:80px;"></div>
+ 
+ 
+           </div>
+
+
+  </div>
+</div>
+
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: "el,en"}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    
+  
+        </body>
+    </html>
+    
