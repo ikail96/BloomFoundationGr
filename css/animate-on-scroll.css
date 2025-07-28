@@ -1,0 +1,23 @@
+h1.animate-on-scroll, h2.animate-on-scroll, p.animate-on-scroll, i.animate-on-scroll, .card.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  
+  h1.animate, h2.animate, p.animate, .card.animate, i.animate{
+    animation: article-load 500ms ease-out forwards;
+    animation-delay: var(--delay, 0s);
+  }
+  
+   
+ 
+  @keyframes article-load {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }

@@ -1,0 +1,60 @@
+/* .btn:hover{
+    background-color: var(--orange-color-logo);
+} */
+
+.btn.active {
+    background-color: var(--orange-color-logo);
+    color: #fff;
+  }
+
+  .btn {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+ #imageLogo.active {
+    filter: invert(1) brightness(0%) sepia(100%) saturate(10000%);
+    filter:  brightness(0) invert(1);
+      }
+ 
+
+  @keyframes rotate {
+    from {
+      transform: rotateY(0deg);
+    }
+    to { 
+      transform: rotateY(360deg);
+    }
+  }
+  
+  #imageLogo {
+   
+      animation-name:            rotate; 
+      animation-duration:        5s; 
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      width: 50px;
+  }
+
+  #hero{
+    background-image: url('images/kids5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+        
+    }
+
+    #hero2{
+        background-image: url('images/kids12.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:100vh;
+            
+        }
+    
+        #hero5{
+          background-image: url('images/company.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          height:100vh;
+              
+          }
